@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca - Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <main>
+        <h1>Jogo da forca - Alura</h1>
+    
+        <div class="hint-container">
+            <h2>Dica</h2>
+            <p class="hint">?</p>  
+        </div>
+
+        <div class="wrong-letters-div">
+            <p class="wrong-letters-p">Letras erradas</p>
+            <span class="special">&#8614;</span>
+        </div>
+
+        <img class="gallows" src="forca.png" alt="Imagem de uma forca">
+
+        <div class="container-lines">
+             <span class="lines">?</span>
+        </div>
+
+        <div class="container"> 
+            <section class="buttons">
+                <button class="new-game">Nova palavra</button>
+                <button class="resign">Desistir</button> 
+                <button class="add-word">Adicionar palavra</button>
+            </section>
+        </div>
+
+        <div class="modal hidden">
+            <div class="add-word-div">
+                <p>Palavra</p>
+                <textarea class="text-area1"></textarea>
+                <p>Dica</p>
+                <textarea class="text-area2"></textarea>
+                <br>
+                <button class="btn-add-word">Adicionar palavra</button>
+                <button class="btn-close-modal">Fechar janela</button>
+            </div>
+        </div>
+
+        <div class="modal-win hidden">
+            <div class="win-div">
+                <h1 class="win-text">Você acertou!!!</h1>
+            </div>
+        </div>
+
+        <div class="modal-lose hidden">
+            <div class="lose-div">
+                <h1 class="lose-text">O miranha foi enforcado!!!</h1>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Iandlley Ryan da Silva - 2022</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
